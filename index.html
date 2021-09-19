@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<script src="edit/jQuery.js"></script>
+		<script src="edit/drawingboard.js"></script>
+		<script src="bootstrap/js/bootstrap.bundle.js"></script>
+		<link rel="stylesheet" href="bootstrap/css/bootstrap.css" />
+		<link rel="stylesheet" href="edit/drawingboard.css" />
+		<title>drawer | home</title>
+	</head>
+	<body>
+		<button
+			onclick="newdrawing()"
+			class="btn btn-success"
+			style="margin-top: 15px; margin-left: 15px"
+		>
+			create new
+		</button>
+		<button
+			onclick="openlast()"
+			class="btn btn-primary"
+			style="margin-top: 15px; margin-left: 15px; color: white"
+		>
+			open last
+		</button>
+		<button
+			onclick="clearall()"
+			class="btn btn-danger"
+			style="margin-top: 15px; margin-left: 15px"
+		>
+			clear all
+		</button>
+		<div class="container" id="container"></div>
+	</body>
+	<script src="renderer.js"></script>
+</html>
+<style>
+	#container {
+		display: grid;
+		grid-template-columns: auto auto auto;
+		grid-gap: 10px;
+		padding: 10px;
+	}
+</style>
